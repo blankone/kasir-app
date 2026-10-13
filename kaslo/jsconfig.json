@@ -1,10 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  eslint: {
-    // Mengabaikan error ESLint saat proses build production
-    ignoreDuringBuilds: true,
-  },
-  output: 'standalone',
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
 }
-
-module.exports = nextConfig
